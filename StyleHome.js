@@ -1,4 +1,5 @@
-$('#line').css("margin-buttom","20px")
+//Style Home Page 
+$("#line").css("margin-buttom","20px")
 $("body").css({
 	"background-image":"url(https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)",
     "background-position":"center",
@@ -35,21 +36,31 @@ $("#button").css({
 	"height":"50px",
 	"border":"1px solid #1d3c6a",
 	"border-radius":"10px",
-	"background-color":"#72C09A",
+	"background-color":"white",
   });
 $("#button").mouseover(function(){
 	$(this).css({
 	   "cursor":"pointer",
-	  "background-color":"#57636e",
+	  "background-color":"grey",
 	})
 	});
 $("#button").mouseout(function(){
 	$(this).css({
 	  "cursor":"default",
-	  "background-color":"#72C09A",
+	  "background-color":"white",
 	})
 	});
 $("#button").focus(function(){
 	$(this).css("outline","0")
 	});
 
+var audio = document.querySelector('audio');
+if (audio) {
+  window.addEventListener('keydown', function (event) {
+    var key = event.which || event.keyCode;
+    if (key === 32) { 
+      event.preventDefault();
+    audio.paused ? audio.play() : audio.pause();
+    }
+  });
+}

@@ -1,13 +1,13 @@
-//Style
+//Style prototype
 $('#line1').css("margin-buttom","20px")
-$('#line2').css("margin-buttom","50px")
+$('#line2').css("margin-top","100px")
 $("body").css({
 	"background-image":"url(https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)",
 	"background-position":"center",
     "background-repeat":"no-repeat",
     "background-size":"100% 100%",
               });
-$(".grid").css({
+$(".first").css({
 	"width":"800px",
 	"height":"550px",
 	"margin":"0 auto",
@@ -19,33 +19,35 @@ $(".grid").css({
 	"border-radius":"50px","border":"2px solide #cbcbcb",
 	"box-shadow":"10px 15px 5px #cbcbcb",
 });
-$(".grid h1").css({
+$(".first h1").css({
 	"font-family":"sans-serif",
-	"background-color":"grey",
-	"font-size":"40px",
+	"background-color":"black",
+	"font-size":"50px",
 	"text-align":"center",
     "color":"#fff",
     "padding":"2px 0px",
     "border-radius":"20px",
     "margin":"10px 10px 10px 10px",
 });
-$(".grid #question").css({
+$(".first #question").css({
 	"font-family": "sans-serif",
 	"font-size":"30px",
-	"color":"black",
+	"color":"white",
 });
-$(".buttons").css("margin-top","30px");
+$(".buttons").css({
+	"margin-top":"30px",
+    "display-inline":"block",
+});
 $("#btn0, #btn1, #btn2, #btn3").css({
-	"background-color":"#72C09A",
+	"background-color":"white",
 	"width":"250px",
+	"font-weight":"bold",
 	"font-size":"20px",
-	"color":"#fff",
+	"color":"black",
 	"border":"1px solid #1d3c6a",
-	"margin":"30px 30px 40px 0px",
+	"margin":"35px 35px 35px 70px",
 	"padding":"10px 10px",
-	"display":"flex",
-	"align-items":"center",
-	"border-radius":"30px",
+	"border-radius":"20px",
 
 });
 $("#progress").css({
@@ -61,7 +63,7 @@ $("#btn0, #btn1, #btn2, #btn3").mouseover(function(){
 $("#btn0, #btn1, #btn2, #btn3").mouseout(function(){
 	$(this).css({
 	"cursor":"default",
-	 "background-color":"#72C09A",
+	 "background-color":"white",
 	})
 	});
 $("#btn0, #btn1, #btn2, #btn3").focus(function(){
